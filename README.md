@@ -21,10 +21,10 @@ npm run lint
 ```
 ### Info
 ```
-This is my "vue" practicing project with my Teacher 'Bestian Tang'.
-In this project I'm gonna use 'router' 'vuex'
-Not sure 'SSR' 'Nuxt' will contain inside or not.
-UI: 'Vuetify'
+This is my "vue" practicing project with my tutor 'Bestian Tang'.
+In this project I'm gonna use 'router' 'vuex' (vue-router, vuex可以試試看)
+Not sure 'SSR' 'Nuxt' will contain inside or not. (SSR, Nuxt應該還不會用到)
+UI: 'Vuetify' (Vuetify可以試試看)
 ```
 
 ### Customize configuration
