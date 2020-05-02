@@ -16,7 +16,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item to="/About">
+        <v-list-item to="/about">
           <v-list-item-action>
             <v-icon>mdi-contact-mail</v-icon>
           </v-list-item-action>
@@ -39,13 +39,13 @@
 
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
     </v-app-bar>
-
-    <!-- <v-content>
+    <v-content>
       <v-container
         class="fill-height"
         fluid
       >
-        <v-row
+    <router-view></router-view>
+        <!-- <v-row
           align="center"
           justify="center"
         >
@@ -82,9 +82,9 @@
               <span>Codepen</span>
             </v-tooltip>
           </v-col>
-        </v-row>
+        </v-row> -->
       </v-container>
-    </v-content> -->
+    </v-content>
 
     <v-footer
       color="cyan"
