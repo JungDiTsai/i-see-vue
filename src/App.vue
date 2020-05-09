@@ -65,5 +65,5 @@ export default {
 </script>
 
 <style type="text/scss">
-  
+
 </style>
