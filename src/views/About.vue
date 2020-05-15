@@ -48,3 +48,16 @@
         </v-container>
     </v-content>
 </template>
+
+<script>
+export default {
+  name: 'About',
+  components: {
+  },
+  data: () => ({
+  })
+}
+</script>
+
+<style lang="scss" scoped>
+</style>

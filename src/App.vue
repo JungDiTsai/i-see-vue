@@ -17,15 +17,26 @@
           </v-list-item-content>
         </v-list-item>
 
+         <v-list-item to="/shop" dark color="white">
+          <v-list-item-action>
+            <v-icon>mdi-cart</v-icon>
+          </v-list-item-action>
+
+          <v-list-item-content>
+            <v-list-item-title>Shop</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
         <v-list-item to="/about" dark color="white">
           <v-list-item-action>
             <v-icon>mdi-contact-mail</v-icon>
           </v-list-item-action>
 
           <v-list-item-content>
-            <v-list-item-title>about</v-list-item-title>
+            <v-list-item-title>About</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
       </v-list>
     </v-navigation-drawer>
 
@@ -35,10 +46,10 @@
       dark
     >
       <v-spacer />
-      <v-toolbar-title >Application</v-toolbar-title>
+      <v-toolbar-title >Menu</v-toolbar-title>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
     </v-app-bar>
-        <router-view></router-view>
+    <router-view></router-view>
     <v-footer
       color="black"
       app
@@ -53,10 +64,8 @@
 <script>
 export default {
   name: 'AppLayoutsDemosBaselineFlipped',
-
   components: {
   },
-
   data: () => ({
     //
     drawer: true
@@ -65,5 +74,4 @@ export default {
 </script>
 
 <style type="text/scss">
-
 </style>

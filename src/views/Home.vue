@@ -5,6 +5,7 @@
         fluid
       >
         <h1 class="text-effect blur">HI! THIS IS JUNG "OUTERSPACE!" </h1>
+        <router-link to="/shop">Shop</router-link>
         <img class="earth" src="../assets/images/earth.png" alt="">
         <div class="flyout" @mouseover="showToggle('over')" @mouseout="showToggle('out')">
           <img src="../assets/images/spaceman.png" alt="">
@@ -64,6 +65,8 @@ export default {
 }
 .text-effect {
   font-size:72px;
+  margin: auto;
+  margin-top: 15px;
   &.blur{
     filter:drop-shadow(0px 4px 4px white);
     animation: textEffect1 1s infinite linear;
