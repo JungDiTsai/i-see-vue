@@ -8,14 +8,16 @@
             :cols="card.flex"
           >
             <v-card>
-              <v-img
-                :src="card.src"
-                class="white--text align-end"
-                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                height="200px"
-              >
+              <router-link :to="'/shopPage/' + card.shopId">
+                <v-img
+                  :src="card.src"
+                  class="white--text align-end"
+                  gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                  height="200px"
+                >
+                </v-img>
+              </router-link>
                 <v-card-title v-text="card.title"></v-card-title>
-              </v-img>
               <v-card-actions>
                 <v-spacer></v-spacer>
                 <v-btn icon value="card.heart">
@@ -43,13 +45,13 @@ export default {
   data: () => ({
     //
     cards: [
-      { title: '外星太空站民宿', flex: '12', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg' },
-      { title: '外星快速道路', flex: '6', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg' },
-      { title: '外星快速道路1', flex: '6', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg' },
-      { title: '外星快速道路2', flex: '6', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg' },
-      { title: '外星快速道路3', flex: '6', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg' },
-      { title: '外星快速道路4', flex: '6', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg' },
-      { title: '太空旅遊跳星球套票', flex: '6', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg' }
+      { title: '外星太空站民宿', shopId: 'tagert1', flex: '12', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg' },
+      { title: '外星快速道路', shopId: 'tagert2', flex: '6', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg' },
+      { title: '外星快速道路1', shopId: 'tagert3', flex: '6', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg' },
+      { title: '外星快速道路2', shopId: 'tagert4', flex: '6', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg' },
+      { title: '外星快速道路3', shopId: 'tagert5', flex: '6', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg' },
+      { title: '外星快速道路4', shopId: 'tagert6', flex: '6', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg' },
+      { title: '太空旅遊跳星球套票', shopId: 'tagert7', flex: '6', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg' }
     ]
   })
 }

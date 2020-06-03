@@ -67,7 +67,6 @@ export default {
   components: {
   },
   data: () => ({
-    //
     drawer: true
   })
 }

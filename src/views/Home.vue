@@ -5,7 +5,7 @@
         fluid
       >
         <h1 class="text-effect blur">HI! THIS IS JUNG "OUTERSPACE!" </h1>
-        <router-link to="/shop">Shop</router-link>
+        <!-- <router-link to="/shop">Shop</router-link> -->
         <img class="earth" src="../assets/images/earth.png" alt="">
         <div class="flyout" @mouseover="showToggle('over')" @mouseout="showToggle('out')">
           <img src="../assets/images/spaceman.png" alt="">
